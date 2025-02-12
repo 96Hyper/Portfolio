@@ -1,0 +1,538 @@
+:root {
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* navbar  */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+}
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+
+nav .right a:last-child {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin: 0 5px;
+}
+
+/* Hero Section */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.hero-section .text {
+  flex: 5;
+}
+.hero-section .text h2 {
+  font-size: 45px;
+}
+
+.hero-section .text .auto-type {
+  color: grey;
+}
+.hero-section .text .links {
+  margin-top: 25px;
+}
+
+.hero-section .text .links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: 0.1s;
+}
+
+.hero-section .text .links a:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+
+.hero-section .headshot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.hero-section .headshot img {
+  width: 350px;
+  border-radius: 55%;
+}
+
+/* section 2  skills*/
+
+.skills-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.skills-section .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-section .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px 20px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 5px;
+  margin: 10px;
+  gap: 10px;
+}
+
+.skills-section .cells span {
+  font-size: 18px;
+}
+
+.skills-section .cells .cell img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+/* section 3 PRoject */
+.project-cards {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cards{
+  display: flex;
+  align-items:  center;
+  gap: 15px;
+  padding: 0 10vw;
+  flex-wrap: wrap;
+}
+
+
+@media (max-width:500px) {
+  .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+}
+
+.project-head{
+  text-align: center;
+  font-weight: 900;
+  border-top: 1px solid rgb(223, 223, 223);
+  padding: 3vw;
+
+}
+.card {
+  height: 550px;
+  
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+ 
+}
+
+.card:hover{
+  transform:scale(1.1); ;
+
+cursor: pointer;
+}
+
+.card img{
+  height: 300px;
+  width: 100%;
+  object-fit:cover;
+  padding: 10px ;
+  border-radius: 4px;
+ 
+ 
+}
+
+.project-section {
+  padding: 0 50px;
+  margin-bottom: 35px;
+}
+
+.project-section h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.project-section .group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.project-section .group .person-details {
+  text-align: center;
+  flex: 2;
+}
+
+.project-section .group .person-details img {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.project-section .group .person-details p {
+  font-weight: 600;
+}
+
+.project-section .group .person-details p:last-child {
+  font-weight: normal;
+}
+.project-section .group .text {
+  flex: 8;
+}
+
+/* contact us */
+
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+  border-top: 1px solid rgb(223, 223, 223);
+}
+
+
+
+.contact-section h2 {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+  padding: 4vw;
+}
+.contact-section .group {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-section .group .text {
+  flex: 3;
+  margin-top: 20px;
+}
+
+.contact-section .group form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+  font-family: "Poppins", sans-serif;
+  border: 2px solid var(--link-color);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+
+.contact-section .group form button {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: var(--link-color);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.contact-section .group form button:hover {
+  filter: brightness(0.9);
+}
+
+.footer-icons {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 95px;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+.footer-icons i {
+  text-decoration: none;
+  color: #1a1c20;
+}
+
+button.resume {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  width: 300px;
+  height: 70px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.resume a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button.resume:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button.resume:active {
+  transform: scale(0.98);
+}
+
+/* for section 1 */
+@media (max-width: 850px) {
+  .hero-section .text h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 740px) {
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .headshot img {
+    width: 300px;
+  }
+
+  /* testimony */
+  .project-section {
+    text-align: center;
+  }
+
+  .project-section .group {
+    flex-direction: column;
+  }
+
+  /* contact */
+
+  .contact-section .group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  /* navbar */
+  nav {
+    padding: 0 20px;
+  }
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+  nav .right a span {
+    display: none;
+  }
+
+  /* section 1 */
+  .hero-section {
+    padding: 0 20px;
+  }
+  .hero-section .text h2 {
+    font-size: 30px;
+  }
+
+  /* section 2  skills*/
+
+  .skills-section {
+    padding: 0 20px;
+  }
+  .skills-section .cells .cell span {
+    font-size: 16px;
+  }
+  /* testimony */
+
+  .testimony-section {
+    padding: 0 20px;
+  }
+  /* contact */
+
+  .contact-section {
+    padding: 0 20px;
+  }
+}
+
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: black;
+  top: 0;
+  transition: all linear 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+#loader h1 {
+  text-align: center;
+  color: transparent;
+  background: linear-gradient(to right, white, grey);
+  -webkit-background-clip: text;
+  font-size: 15vw;
+  font-weight: 900;
+  animation-name: load;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  transition: linear;
+  position: absolute;
+}
+
+#loader h1:nth-child(2) {
+  animation-delay: 2s;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#main-elem{
+  position: relative;
+}
+#elements {
+  position: absolute;
+  height: 130px;
+  width: 100px;
+  background-color: white;
+  border-radius: 50%;
+  animation-name: elem;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  filter: blur(20px);
+}
+
+@keyframes elem {
+  from {
+    transform: translate(-10% -10%);
+  }
+  to {
+    transform: translate(50%, 10%);
+  }
+}
+
+#elements2 {
+  height: 40vh;
+  width: 40vh;
+  top: 10%;
+  left: 0;
+  position: absolute;
+  animation-direction: alternate;
+  background-color: rgba(255, 255, 255, 0.459);
+  border-radius: 50%;
+ 
+  animation-timing-function: linear;
+  animation-name: elem2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  filter: blur(20px);
+}
+
+@keyframes elem2 {
+  from {
+    transform: translate(10% -10%);
+  }
+  to {
+    transform: translate(50%, 10%);
+  }
+}
+
+
+
